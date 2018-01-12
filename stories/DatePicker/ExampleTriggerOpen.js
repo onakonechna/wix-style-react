@@ -1,13 +1,13 @@
 import React from 'react';
 import {DatePicker} from 'wix-style-react';
-import moment from 'moment';
+import format from 'date-fns/format';
 
 class ExampleTriggerOpen extends React.Component {
   constructor(params) {
     super(params);
 
     this.state = {
-      value: moment('03/09/2017', 'DD/MM/YYYY')
+      value: format('03/09/2018', 'DD/MM/YYYY')
     };
   }
 
